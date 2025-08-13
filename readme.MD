@@ -1,6 +1,6 @@
 ## My portfolio inital commit 
 
-- Avilable at [portfolio.dheerajg.me](portfolio.dheerajg.me)
+- Avilable at [portfolio.dheerajg.me](https://portfolio.dheerajg.me)
 
 - Steps to host on a VM
 
