@@ -8,10 +8,9 @@ st.sidebar.title("Dheeraj Gajula")
 st.sidebar.markdown("""
 - 💼 [LinkedIn](https://www.linkedin.com/in/dheeraj-gajula-8776381ba/)
 - 💻 [GitHub](https://github.com/dheerajgajula02)
-- 📧 dheerajgajula2202@gmail.com
+- dheeraj.gajula@colorado.edu
 """)
-st.sidebar.markdown("#### Currently at")
-st.sidebar.write("**University of Colorado Boulder**")
+st.sidebar.write("**MSCS @ University of Colorado Boulder**")
 
 # --- HEADER ---
 st.title("Dheeraj Gajula")
