@@ -1,5 +1,5 @@
 import streamlit as st
-
+from email_sender import EmailSender
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Dheeraj Gajula Portfolio", page_icon=":wave:", layout="wide")
 
@@ -11,6 +11,37 @@ st.sidebar.markdown("""
 - dheeraj.gajula@colorado.edu
 """)
 st.sidebar.write("**MSCS @ University of Colorado Boulder**")
+
+# --- CONTACT FORM IN SIDEBAR ---
+st.sidebar.header("Contact Me")
+
+with st.sidebar.form(key="contact_form"):
+    # Email input
+    email = st.text_input("Your Email")
+
+    # Dropdown
+    inquiry_type = st.selectbox(
+        "Type of Inquiry",
+        ["General", "Collaboration", "Job Opportunity", "Other"]
+    )
+
+    # Multiline text area
+    message = st.text_area("Your Message", height=80)
+
+    # Submit button
+    submit_button = st.form_submit_button(label="Send")
+
+    if submit_button:
+        if email and message:
+            st.sidebar.success("✅ Your message has been submitted!")
+            # Here you could add email sending logic
+            
+            email_sender = EmailSender()
+            email_sender.send_email(reason=inquiry_type, email=email, body=message)
+            # Example: send to a Google Sheet or Email API
+        else:
+            st.sidebar.error("Please fill in all required fields.")
+
 
 # --- HEADER ---
 st.title("Dheeraj Gajula")
