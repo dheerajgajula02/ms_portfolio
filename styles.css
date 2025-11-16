@@ -1,32 +1,36 @@
 /* Minimal, old-school styling inspired by Wikipedia: no external fonts, no images */
 :root{
   --maxw:900px;
-  --muted:#666;
+  --muted:#9aa7b2;
+  --bg:#071019; /* near-black background */
+  --panel:#0f1a26; /* section panels */
+  --accent:#7dd3fc; /* light cyan accent */
+  --text:#e6eef8; /* light text */
 }
 html,body{height:100%;}
 body{
   font-family: "Times New Roman", Times, serif;
-  background: linear-gradient(180deg, #fbfbfd 0%, #f2f6fb 100%);
-  color:#111;
+  background: var(--bg);
+  color:var(--text);
   margin:0;
   padding:0;
   line-height:1.5;
 }
 #page{max-width:var(--maxw);margin:18px auto;padding:18px}
-header{border-bottom:1px solid #ddd;padding-bottom:8px;margin-bottom:16px}
-header h1{margin:0;font-size:28px}
+header{border-bottom:1px solid rgba(255,255,255,0.04);padding-bottom:8px;margin-bottom:16px}
+header h1{margin:0;font-size:28px;color:var(--text)}
 .tag{color:var(--muted);margin:4px 0 0}
 /* subtle highlighted header */
-header{background:linear-gradient(90deg,#fff9c4, #fff);padding:12px;border-radius:4px}
+header{background:linear-gradient(90deg, rgba(125,211,252,0.06), transparent);padding:12px;border-radius:4px}
 header h1{letter-spacing:0.4px}
-nav{margin:12px 0;padding:6px 0;border-bottom:1px dashed #ddd}
-nav a{margin-right:12px;color:#000;text-decoration:none}
+nav{margin:12px 0;padding:6px 0;border-bottom:1px dashed rgba(255,255,255,0.04)}
+nav a{margin-right:12px;color:var(--accent);text-decoration:none}
 main{padding:12px 0}
-section{margin-bottom:20px;padding:10px;border-left:4px solid #e0e7ff;background:linear-gradient(90deg, rgba(224,231,255,0.3), transparent);border-radius:3px}
-section h2{font-size:18px;margin:0 0 8px;color:#1f3b76;padding-left:6px}
-section h3{margin:6px 0 6px;font-size:15px;color:#27408b}
+section{margin-bottom:20px;padding:10px;border-left:4px solid rgba(125,211,252,0.08);background:linear-gradient(90deg, rgba(255,255,255,0.01), transparent);border-radius:3px}
+section h2{font-size:18px;margin:0 0 8px;color:var(--accent);padding-left:6px}
+section h3{margin:6px 0 6px;font-size:15px;color:var(--text)}
 ul{padding-left:20px}
-footer{border-top:1px solid #eee;color:var(--muted);font-size:13px;padding-top:10px;margin-top:24px}
+footer{border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);font-size:13px;padding-top:10px;margin-top:24px}
 .hint{font-size:13px;color:var(--muted)}
 
 /* Technical skills grid: lightweight, responsive columns */
@@ -38,11 +42,11 @@ footer{border-top:1px solid #eee;color:var(--muted);font-size:13px;padding-top:1
 }
 #technical-skills .skill-group{
   padding:8px 10px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.02);
   border-radius:6px;
-  box-shadow: 0 0 0 1px rgba(31,59,118,0.02) inset;
+  border: 1px solid rgba(255,255,255,0.03);
 }
-#technical-skills .skill-group h3{margin-top:0;margin-bottom:6px;font-size:14px}
+#technical-skills .skill-group h3{margin-top:0;margin-bottom:6px;font-size:14px;color:var(--accent)}
 #technical-skills ul{margin:0;padding-left:18px}
 
 /* Responsive adjustments but still very small */
