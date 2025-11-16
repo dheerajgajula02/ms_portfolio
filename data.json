@@ -1,0 +1,110 @@
+{
+  "name": "Dheeraj Gajula",
+  "tag": "Software & Network Engineer — Minimal portfolio",
+  "email": "dheeraj.gajula@colorado.edu",
+  "resume_file": "Dheeraj_REsume%20(1).pdf",
+  "Education": {
+    "Master's in Computer Science": [
+      "University of Colorado – Boulder",
+      "Aug 2025 – May 2027 (expected)"
+    ],
+    "Bachelor's in Computer Science and Engineering": [
+      "Dayanada Sagar College of Engineering, Bangalore, India",
+      "Nov 2020 – May 2024, GPA: 3.76/4.0"
+    ]
+  },
+  "About": {
+    "Summary": [
+      "Software & Network Engineer with experience building REST APIs (Go), data pipelines (Python, BigQuery), and containerized services.",
+      "Comfortable with systems programming, networking, and ML/AI research work."
+    ]
+  },
+  "Experience": {
+    "Versa Networks — Software Engineer": [
+      "June 2024 – Aug 2025",
+      "Developed REST APIs in Go and Cassandra serving 3000+ reqs/s; monitored via Prometheus and Grafana.",
+      "Containerized services with Docker and Kubernetes and deployed to GCP."
+    ],
+    "Versa Networks — Intern": [
+      "Feb 2024 – June 2024",
+      "Automated device usage tracking; reduced billing time from days to under an hour.",
+      "Built anomaly detection and state machines for device monitoring."
+    ]
+  },
+  "Projects": {
+    "Network Applications": [
+      "C++, Network Programming",
+      "Developed multi-threaded TCP/UDP HTTP server with GET/HEAD/POST parsing and concurrent processing. Implemented reliable UDP transfers (Stop-and-Wait, Go-Back-N)."
+    ],
+    "Enterprise Network Lab": [
+      "STP, DHCP Server, EIGRP, RIP, VLANs",
+      "Configured Cisco enterprise networks with VLANs, trunking (802.1Q), STP/RSTP, HSRP, and routing protocols."
+    ],
+    "Schizo AI": [
+      "Python, TensorFlow, Explainable AI",
+      "Undergrad thesis presented at an international conference. Explored LIME, SHAP, and CAM for explainability in schizophrenia diagnosis."
+    ]
+  },
+  "Technical Skills": {
+    "Languages": [
+      "GoLang",
+      "Python",
+      "C/C++",
+      "SQL",
+      "Bash"
+    ],
+    "Frameworks & Database": [
+      "Flask",
+      "FastAPI",
+      "Postgres",
+      "BigQuery",
+      "Cassandra",
+      "MongoDB",
+      "Firebase"
+    ],
+    "Developer Tools": [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "GCP",
+      "Grafana",
+      "AWS",
+      "NGINX",
+      "Hugging Face",
+      "Wireshark",
+      "Prometheus"
+    ],
+    "Libraries": [
+      "pandas",
+      "NumPy",
+      "Matplotlib",
+      "TensorFlow",
+      "OpenCV",
+      "scikit-learn",
+      "Seaborn",
+      "NLTK"
+    ],
+    "Networking": [
+      "TCP/IP",
+      "UDP",
+      "HTTP/HTTPS",
+      "DNS",
+      "DHCP",
+      "BGP",
+      "OSPF",
+      "EIGRP",
+      "RIP",
+      "VLANs",
+      "NAT/PAT",
+      "Socket & protocol design"
+    ]
+  },
+  "Achievements": {
+    "Explainable AI for Schizophrenia": [
+      "Presented undergrad thesis at International Conference for Advanced Data Driven Intelligence."
+    ],
+    "Smart India Hackathon": [
+      "Winner — built backend for Tenali to save court time (2022)."
+    ]
+  }
+}

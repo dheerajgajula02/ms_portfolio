@@ -1,0 +1,52 @@
+/* Minimal, old-school styling inspired by Wikipedia: no external fonts, no images */
+:root{
+  --maxw:900px;
+  --muted:#666;
+}
+html,body{height:100%;}
+body{
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(180deg, #fbfbfd 0%, #f2f6fb 100%);
+  color:#111;
+  margin:0;
+  padding:0;
+  line-height:1.5;
+}
+#page{max-width:var(--maxw);margin:18px auto;padding:18px}
+header{border-bottom:1px solid #ddd;padding-bottom:8px;margin-bottom:16px}
+header h1{margin:0;font-size:28px}
+.tag{color:var(--muted);margin:4px 0 0}
+/* subtle highlighted header */
+header{background:linear-gradient(90deg,#fff9c4, #fff);padding:12px;border-radius:4px}
+header h1{letter-spacing:0.4px}
+nav{margin:12px 0;padding:6px 0;border-bottom:1px dashed #ddd}
+nav a{margin-right:12px;color:#000;text-decoration:none}
+main{padding:12px 0}
+section{margin-bottom:20px;padding:10px;border-left:4px solid #e0e7ff;background:linear-gradient(90deg, rgba(224,231,255,0.3), transparent);border-radius:3px}
+section h2{font-size:18px;margin:0 0 8px;color:#1f3b76;padding-left:6px}
+section h3{margin:6px 0 6px;font-size:15px;color:#27408b}
+ul{padding-left:20px}
+footer{border-top:1px solid #eee;color:var(--muted);font-size:13px;padding-top:10px;margin-top:24px}
+.hint{font-size:13px;color:var(--muted)}
+
+/* Technical skills grid: lightweight, responsive columns */
+#technical-skills .skill-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+#technical-skills .skill-group{
+  padding:8px 10px;
+  background: rgba(255,255,255,0.6);
+  border-radius:6px;
+  box-shadow: 0 0 0 1px rgba(31,59,118,0.02) inset;
+}
+#technical-skills .skill-group h3{margin-top:0;margin-bottom:6px;font-size:14px}
+#technical-skills ul{margin:0;padding-left:18px}
+
+/* Responsive adjustments but still very small */
+@media (max-width:600px){
+  #page{padding:12px;margin:8px}
+  header h1{font-size:20px}
+}

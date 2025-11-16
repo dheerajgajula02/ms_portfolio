@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dheeraj Gajula — Minimal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Minimal, low-resource personal portfolio." />
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>Dheeraj Gajula</h1>
+        <p class="tag">Software & Network Engineer — Minimal portfolio</p>
+      </header>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <main>
+        <!-- content_html will contain all sections rendered from data.json -->
+        <section id="education">
+  <h2>Education</h2>
+  <h3>Master's in Computer Science</h3>
+<ul>
+<li>University of Colorado – Boulder</li>
+<li>Aug 2025 – May 2027 (expected)</li>
+</ul>
+<h3>Bachelor's in Computer Science and Engineering</h3>
+<ul>
+<li>Dayanada Sagar College of Engineering, Bangalore, India</li>
+<li>Nov 2020 – May 2024, GPA: 3.76/4.0</li>
+</ul>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <h3>Summary</h3>
+<ul>
+<li>Software & Network Engineer with experience building REST APIs (Go), data pipelines (Python, BigQuery), and containerized services.</li>
+<li>Comfortable with systems programming, networking, and ML/AI research work.</li>
+</ul>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <h3>Versa Networks — Software Engineer</h3>
+<ul>
+<li>June 2024 – Aug 2025</li>
+<li>Developed REST APIs in Go and Cassandra serving 3000+ reqs/s; monitored via Prometheus and Grafana.</li>
+<li>Containerized services with Docker and Kubernetes and deployed to GCP.</li>
+</ul>
+<h3>Versa Networks — Intern</h3>
+<ul>
+<li>Feb 2024 – June 2024</li>
+<li>Automated device usage tracking; reduced billing time from days to under an hour.</li>
+<li>Built anomaly detection and state machines for device monitoring.</li>
+</ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <h3>Network Applications</h3>
+<ul>
+<li>C++, Network Programming</li>
+<li>Developed multi-threaded TCP/UDP HTTP server with GET/HEAD/POST parsing and concurrent processing. Implemented reliable UDP transfers (Stop-and-Wait, Go-Back-N).</li>
+</ul>
+<h3>Enterprise Network Lab</h3>
+<ul>
+<li>STP, DHCP Server, EIGRP, RIP, VLANs</li>
+<li>Configured Cisco enterprise networks with VLANs, trunking (802.1Q), STP/RSTP, HSRP, and routing protocols.</li>
+</ul>
+<h3>Schizo AI</h3>
+<ul>
+<li>Python, TensorFlow, Explainable AI</li>
+<li>Undergrad thesis presented at an international conference. Explored LIME, SHAP, and CAM for explainability in schizophrenia diagnosis.</li>
+</ul>
+</section>
+
+<section id="technical-skills">
+  <h2>Technical Skills</h2>
+  <div class="skill-grid">
+<div class="skill-group"><h3>Languages</h3><ul>
+<li>GoLang</li>
+<li>Python</li>
+<li>C/C++</li>
+<li>SQL</li>
+<li>Bash</li>
+</ul></div>
+<div class="skill-group"><h3>Frameworks & Database</h3><ul>
+<li>Flask</li>
+<li>FastAPI</li>
+<li>Postgres</li>
+<li>BigQuery</li>
+<li>Cassandra</li>
+<li>MongoDB</li>
+<li>Firebase</li>
+</ul></div>
+<div class="skill-group"><h3>Developer Tools</h3><ul>
+<li>Git</li>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>GCP</li>
+<li>Grafana</li>
+<li>AWS</li>
+<li>NGINX</li>
+<li>Hugging Face</li>
+<li>Wireshark</li>
+<li>Prometheus</li>
+</ul></div>
+<div class="skill-group"><h3>Libraries</h3><ul>
+<li>pandas</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>TensorFlow</li>
+<li>OpenCV</li>
+<li>scikit-learn</li>
+<li>Seaborn</li>
+<li>NLTK</li>
+</ul></div>
+<div class="skill-group"><h3>Networking</h3><ul>
+<li>TCP/IP</li>
+<li>UDP</li>
+<li>HTTP/HTTPS</li>
+<li>DNS</li>
+<li>DHCP</li>
+<li>BGP</li>
+<li>OSPF</li>
+<li>EIGRP</li>
+<li>RIP</li>
+<li>VLANs</li>
+<li>NAT/PAT</li>
+<li>Socket & protocol design</li>
+</ul></div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <h3>Explainable AI for Schizophrenia</h3>
+<ul>
+<li>Presented undergrad thesis at International Conference for Advanced Data Driven Intelligence.</li>
+</ul>
+<h3>Smart India Hackathon</h3>
+<ul>
+<li>Winner — built backend for Tenali to save court time (2022).</li>
+</ul>
+</section>
+
+        <section id="resume">
+          <h2>Resume</h2>
+          <p>
+            Download or view the resume (PDF):
+            <a href="Dheeraj_REsume%20(1).pdf" download>Download Resume (PDF)</a>
+          </p>
+          <p class="hint">If the resume doesn't display in-browser, download it and open locally.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            Email: <a href="mailto:dheeraj.gajula@colorado.edu">dheeraj.gajula@colorado.edu</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Built to be tiny — static files only. Regenerate with the included script when you update `data.json`.</p>
+      </footer>
+    </div>
+  </body>
+</html>

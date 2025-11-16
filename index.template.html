@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{name}} — Minimal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Minimal, low-resource personal portfolio." />
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>{{name}}</h1>
+        <p class="tag">{{tag}}</p>
+      </header>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <main>
+        <!-- content_html will contain all sections rendered from data.json -->
+        {{content_html}}
+
+        <section id="resume">
+          <h2>Resume</h2>
+          <p>
+            Download or view the resume (PDF):
+            <a href="{{resume_link}}" download>Download Resume (PDF)</a>
+          </p>
+          <p class="hint">If the resume doesn't display in-browser, download it and open locally.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            Email: <a href="mailto:{{email}}">{{email}}</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Built to be tiny — static files only. Regenerate with the included script when you update `data.json`.</p>
+      </footer>
+    </div>
+  </body>
+</html>
